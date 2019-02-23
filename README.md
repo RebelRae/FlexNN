@@ -2,14 +2,15 @@
 
 
 >A neural network learning series to expand our collective understanding of NNs and their usability. The beginning of this series is no longer on <a href="https://www.Twitch.tv/Rebel_Rae">twitch</a> in the streamed section, however, I will be editing the video for asthetics and to eliminate monotony
-<hr>
 
-## Table of Contents
+>The GUI will be made available for download once we complete the series
+## Contents
 * [Installation](#installation)
 * [Examples](#examples)
 * [Tests](#tests)
 * [Contributors](#contributors)
 * [License](#license)
+![Picture](https://images.pexels.com/photos/724994/pexels-photo-724994.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=325&w=470)
 
 ## <a name="installation"></a>Installation
 **Updates soon**

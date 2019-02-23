@@ -17,6 +17,25 @@ alt="Testing images" width="240" height="180" border="2" />
 
 ## <a name="examples"></a>Examples
 **Updates soon**
+```c++
+
+
+//      Training data : XOR
+std::vector<std::vector<std::vector<double>>> trainingData;
+trainingData.push_back({{0.0, 0.0},{0.0}});
+trainingData.push_back({{0.0, 1.0},{1.0}});
+trainingData.push_back({{1.0, 0.0},{1.0}});
+trainingData.push_back({{1.0, 1.0},{0.0}});
+//      Mapping layers
+std::vector<unsigned long> topology = {
+trainingData.at(0).at(0).size(),      // Input neurons
+trainingData.at(0).at(1).size(),      // Output neurons
+2                                     // Each extra layer in between I/O
+};
+//      Initialize brain
+Brain brain = *new Brain(topology);
+
+```
 
 ## <a name="tests"></a>Tests
 **Updates soon**

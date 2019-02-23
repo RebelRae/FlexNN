@@ -5,11 +5,11 @@
 <hr>
 
 ## Table of Contents
-* [Installation] (#installation)
-* [Examples] (#examples)
-* [Tests] (#tests)
-* [Contributors] (#contributors)
-* [License] (#license)
+* [Installation](#installation)
+* [Examples](#examples)
+* [Tests](#tests)
+* [Contributors](#contributors)
+* [License](#license)
 
 ## <a name="installation"></a>Installation
 **Updates soon**

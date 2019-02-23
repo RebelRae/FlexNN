@@ -1,7 +1,7 @@
 ## FlexNN
 
 
->A neural network learning series to expand our collective understanding of NNs and their usability. The beginning of this series is no longer on <a href="Twitch.tv/Rebel_Rae">twitch</a> in the streamed section, however, I will be editing the video for asthetics and to eliminate monotony
+>A neural network learning series to expand our collective understanding of NNs and their usability. The beginning of this series is no longer on <a href="https://www.Twitch.tv/Rebel_Rae">twitch</a> in the streamed section, however, I will be editing the video for asthetics and to eliminate monotony
 <hr>
 
 ## Table of Contents

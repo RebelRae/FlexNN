@@ -1,4 +1,5 @@
 # FlexNN
+
 <img src="https://images.pexels.com/photos/724994/pexels-photo-724994.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=325&w=470" 
 alt="Testing images" width="240" height="180" border="2" />
 
@@ -17,6 +18,7 @@ alt="Testing images" width="240" height="180" border="2" />
 
 ## <a name="examples"></a>Examples
 **Training Data**
+
 Our training data is structured as a vector of vectors of vectors of doubles.
 * The outer vector is all of the training data
 * Each entry is a vector that contains a vector of inputs and a vector of outputs
@@ -32,6 +34,7 @@ trainingData.push_back({{1.0, 1.0},{0.0}});
 
 ```
 **Topology**
+
 The topology of this lobe begins with the I/O layers at [0] and [1] respectively and is then followed by any number of any size of hidden layers
 ```c++
 

@@ -13,12 +13,15 @@ alt="Testing images" width="240" height="180" border="2" />
 * [License](#license)
 
 ## <a name="installation"></a>Installation
-**Updates soon**
+**Currently in development stage**
 
 ## <a name="examples"></a>Examples
-**Updates soon**
+**Training Data**
+Our training data is structured as a vector of vectors of vectors of doubles.
+* The outer vector is all of the training data
+* Each entry is a vector that contains a vector of inputs and a vector of outputs
+* An example for the standard eXclusive OR follows
 ```c++
-
 
 //      Training data : XOR
 std::vector<std::vector<std::vector<double>>> trainingData;
@@ -26,14 +29,54 @@ trainingData.push_back({{0.0, 0.0},{0.0}});
 trainingData.push_back({{0.0, 1.0},{1.0}});
 trainingData.push_back({{1.0, 0.0},{1.0}});
 trainingData.push_back({{1.0, 1.0},{0.0}});
+
+```
+**Topology**
+The topology of this lobe begins with the I/O layers at [0] and [1] respectively and is then followed by any number of any size of hidden layers
+```c++
+
 //      Mapping layers
 std::vector<unsigned long> topology = {
 trainingData.at(0).at(0).size(),      // Input neurons
 trainingData.at(0).at(1).size(),      // Output neurons
 2                                     // Each extra layer in between I/O
 };
+
+```
+**Brain Functions**
+###### Initializer
+```c++
+
 //      Initialize brain
 Brain brain = *new Brain(topology);
+
+```
+###### Configure
+Currently does nothing
+```c++
+
+//      Initialize configuration
+Configuration config = *new Configuration({});
+//      Configure brain
+brain.Configure(config);
+
+```
+###### Learn
+Currently in feed forward only
+```c++
+
+//      Train on data
+brain.Learn(trainingData);
+
+```
+###### Print
+Takes 1 bool argument
+* true = will print neuron value, activation, derivative, and weight
+* false = will print only neuron value
+```c++
+
+//      Print current state of brain
+brain.Print(false);
 
 ```
 
@@ -41,7 +84,7 @@ Brain brain = *new Brain(topology);
 **Updates soon**
 
 ## <a name="contributors"></a>Contributors
-**Updates soon**
+**Sole contributor to this repository: Rebel Rae**
 
 ## <a name="license"></a>License
 **Not under MIT until I can scrutinize my code more**
